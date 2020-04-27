@@ -61,8 +61,11 @@ $ docker-compose run --rm --no-deps blog-server php artisan storage:link
 $ docker run --rm -it -v $(pwd):/app -w /app node yarn
 $ docker-compose up -d
 ```
+Funciona sin hacer el link
+Hay que instalar el yarn en entorno Windows
 
 Now you can access the application via [http://localhost:8000](http://localhost:8000).
+En el docker de windows no es es localhost
 
 **There is no need to run ```php artisan serve```. PHP is already running in a dedicated container.**
 
